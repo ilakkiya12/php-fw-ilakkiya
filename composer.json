@@ -1,0 +1,16 @@
+{
+    "name": "metinet/2018-oop",
+    "authors": [
+        {
+            "name": "Boris Guéry",
+            "email": "guery.b@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Metinet\\": "src/Metinet"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
