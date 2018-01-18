@@ -30,7 +30,7 @@ class Conference
      * @param $salle
      */
 
-    public function __construct(string $name, DateConference $dateConference, string $description, string  $objectif, Student $student, int  $numberOfParticipant, SalleConference $salleConference)
+    public function __construct(string $name, DateConference $dateConference, string $description, string  $objectif, Student $student, int  $numberOfParticipant, SalleConference $salleConference, string $lieu)
     {
         $this->name = $name;
         $this->date = $dateConference;
@@ -39,6 +39,7 @@ class Conference
         $this->student = $student;
         $this->numberOfParticipant = $numberOfParticipant;
         $this->salleEvenement = $salleConference;
+        $this->lieu= $lieu;
     }
 
 
@@ -93,7 +94,7 @@ class Conference
      * Conference constructor.
      */
 
-    public function canCreateEvenement(Student $student): bool
+    public function canCreateConference(Student $student): bool
     {
         if($student )
     }
@@ -103,8 +104,15 @@ class Conference
      * @param $date
      */
 
-    public function createEvenement(Candidate $candidate): self
+    public function createConference(Student $student ): self
     {
+
+
+    }
+
+    public function inscription():self
+    {
+
 
     }
 

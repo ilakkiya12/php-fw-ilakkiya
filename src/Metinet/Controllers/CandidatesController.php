@@ -11,10 +11,12 @@ class CandidatesController
     {
         return new Response(sprintf('<p>Hello %s</p>', $request->getQuery()->get('name', 'Anonymous')));
     }
+
     public function disBonjour(Request $request): Response
     {
         return new Response(sprintf('<p>Bonjour %s</p>', $request->getQuery()->get('name', 'Anonyme')));
     }
+
     public  function retrieveMemberList(Request $request): Response
     {
         $members = [

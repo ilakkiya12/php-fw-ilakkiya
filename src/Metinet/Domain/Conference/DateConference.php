@@ -13,10 +13,7 @@ class DateConference
         return new self($dateConference);
     }
 
-    public function toAge(): int
-    {
-        return (new \DateTimeImmutable('now'))->diff($this->dateConference)->y;
-    }
+
 
     private function __construct(string $dateConference)
     {
